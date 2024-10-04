@@ -1,1 +1,25 @@
-<h1>Home</h1>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Simple Tabata</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h1" id="counter">Press start</div>
+                <button id="startButton">Start</button>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/scripts.js' %}"></script>
+{% endblock %}
